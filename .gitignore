@@ -11,3 +11,5 @@ desing-figma/
 #modules
 
 node_modules/
+
+dist/
