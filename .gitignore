@@ -1,0 +1,13 @@
+#Desing
+#####################################################
+*.sketch
+*.fig
+*.xd
+desing-figma/
+
+.DS_Store
+.prettierignore
+
+#modules
+
+node_modules/
