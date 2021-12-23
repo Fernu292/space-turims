@@ -36,9 +36,19 @@ h4{
     font-size: 32px;
 }
 
-.sub-h-1, h5{
-    font-family: $hFont;
+.sub-h-1{
+    font-family: $subFont;
     font-size: 28px;
+    text-transform: uppercase;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+h5{
+    color: $ligthPurlple;
 }
 
 .sub-h-2, .navigation{
@@ -56,8 +66,11 @@ h4{
 p{
     font-family: $subFont;
     font-size: 16px;
+    color: $ligthPurlple;
 }
 
 ul{
     font-family: $subFont;
 }
+
+

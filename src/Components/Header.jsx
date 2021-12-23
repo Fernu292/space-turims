@@ -9,15 +9,21 @@ const HeaderNav = styled.header`
     display: flex;
     justify-content: space-between;
     margin: 5rem 0 0 3rem;
+    align-items: center;
     img{
         display: flex;
         justify-content: center;
         object-fit: contain;
     }
 
-    hr{
+    &>span{
         display: flex;
-        flex-direction: column;
+        border-bottom: solid white 1px ;
+        width: 70%;
+        align-items: center;
+        margin-right: -2rem;
+        margin-left: 2rem;
+        z-index: 5;
     }
 `;
 
@@ -25,7 +31,7 @@ const Header = () => {
     return ( 
         <HeaderNav>
             <img src= {Logo} alt="" />
-            <hr />
+            <span ></span>
             <NavBar />
         </HeaderNav>
     );

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Navigation = styled.nav`
-    background-color: rgba(255, 255, 255, .15);  
+    background-color: #5f5f5f35;  
     backdrop-filter: blur(5px);
     padding: 1rem 5rem;
     ul{
@@ -15,10 +15,11 @@ const Navigation = styled.nav`
         margin-right: 5rem;
         font-size: 18px;
 
-
         li a{
             color: white;
             text-decoration: none;
+            font-weight: 400;
+            font-size: 22px;
         }
 
         li{
@@ -26,7 +27,7 @@ const Navigation = styled.nav`
         }
 
         li span{ 
-            margin-right: 0.5rem;
+            margin-right: 0.7rem;
             font-weight: bold;
         }
     }
