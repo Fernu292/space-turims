@@ -1,7 +1,63 @@
-$base-color: #c6538c;
-$color: rgba(black, .88);
+@import 'vars';
+
+html{
+    background-color: $darkBlue;
+    color: $white;
+}
 
 body{
-    background-color: $base-color;
-    color: $color;
+    margin: 0;
+    padding: 0;
+}
+
+#root{
+    margin-top: 0;
+}
+
+h1,h2,h3, h4, h5{
+    font-family: $hFont;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1{
+    font-size: 150px;
+}
+
+h2{
+    font-size: 100px;
+}
+
+h3{
+    font-size: 56px;
+}
+
+h4{
+    font-size: 32px;
+}
+
+.sub-h-1, h5{
+    font-family: $hFont;
+    font-size: 28px;
+}
+
+.sub-h-2, .navigation{
+    font-family: $subFont;
+}
+
+.sub-h-2{
+    font-size: 14px;
+}
+
+.navigation{
+    font-size: 16px;
+}
+
+p{
+    font-family: $subFont;
+    font-size: 16px;
+}
+
+ul{
+    font-family: $subFont;
 }
