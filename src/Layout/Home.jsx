@@ -18,6 +18,26 @@ const HomeContent = styled.section`
     div > p{
         font-size: 26px;
     }    
+
+    @media (max-width: 480px){
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+
+        div > h1{
+            font-size: 4rem;
+        }
+
+        div > h5{
+            font-size: 1.2rem;
+        }
+
+        div > p{
+            font-size: 1.1rem;
+        }
+    }
 `;
 
 const Home = () => {

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+
+import Header from '../Components/Header';
 
 const Crew = () => {
     return ( 
-        <h3>Crew</h3>
-     );
+        <>
+            <Header />
+            
+        </>
+    );
 }
  
 export default Crew;

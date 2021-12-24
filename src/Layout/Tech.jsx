@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
 
+import Header from '../Components/Header';
 
 const Tech = () => {
     return ( 
-        <h2>Technology</h2>
-     );
+        <Header />
+    );
 }
  
 export default Tech;

@@ -25,6 +25,10 @@ const HeaderNav = styled.header`
         margin-left: 2rem;
         z-index: 5;
     }
+
+    @media (max-width: 480px){
+        margin: 1rem 0 0 2rem;
+    }
 `;
 
 const Header = () => {

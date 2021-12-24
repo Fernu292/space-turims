@@ -1,19 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import styled from 'styled-components';
 
 const Navigation = styled.nav`
+
     background-color: #5f5f5f35;  
     backdrop-filter: blur(5px);
-    padding: 1rem 5rem;
+    padding: 0 5rem;
+
     ul{
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 4rem;
-        margin-right: 5rem;
         font-size: 18px;
+        margin: 0 5rem 0 0;
 
         li a{
             color: white;
@@ -24,6 +26,8 @@ const Navigation = styled.nav`
 
         li{
             list-style: none;
+            padding: 1.8rem 0 1.8rem 0;
+
         }
 
         li span{ 
@@ -31,26 +35,38 @@ const Navigation = styled.nav`
             font-weight: bold;
         }
     }
+
+    @media (max-width: 480px){
+        ul{
+            flex-direction: column;
+            position: fixed;
+
+        }
+    }
 `;
 
 const NavBar = () => {
+
+    let location = useLocation();
+    console.log(location.pathname);
+    
     return ( 
         <Navigation>
             <ul className='navigation'>
                 <li>
-                    <Link to = '/'><span>00</span>Home</Link>
+                    <Link to = '/' id='00'><span>00</span>Home</Link>
                 </li>
 
-                <li>
-                    <Link to = '/destination'><span>01</span>Destination</Link>
+                <li >
+                    <Link to = '/destination'id='01'><span>01</span>Destination</Link>
                 </li>
 
-                <li>
-                    <Link to = '/crew'><span>02</span>Crew</Link>
+                <li >
+                    <Link to = '/crew' id='02'><span>02</span>Crew</Link>
                 </li>
 
-                <li>
-                    <Link to = '/tech'><span>03</span>Technology</Link>
+                <li >
+                    <Link to = '/tech' id='03'><span>03</span>Technology</Link>
                 </li>
             </ul>
         </Navigation>

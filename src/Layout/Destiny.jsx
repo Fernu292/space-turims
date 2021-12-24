@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import '../styles/Layout/Destiny.scss';
+
+import Header from '../Components/Header';
 
 const Destiny = () => {
     return ( 
-        <h2>Destiny</h2>
-     );
+        <Header />
+    );
 }
  
 export default Destiny;

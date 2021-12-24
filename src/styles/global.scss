@@ -1,13 +1,11 @@
 @import 'vars';
 
-html{
-    background-color: $darkBlue;
-    color: $white;
-}
 
 body{
     margin: 0;
-    padding: 0;
+    padding: 2rem 0 0 0;
+    color: $white;
+
 }
 
 #root{
@@ -62,6 +60,9 @@ h5{
 .navigation{
     font-size: 16px;
 }
+.navigation li a{
+    padding: 0.5rem;
+}
 
 p{
     font-family: $subFont;
@@ -71,6 +72,10 @@ p{
 
 ul{
     font-family: $subFont;
+}
+
+.nav-bar-active{
+    border-bottom: solid white 2px;
 }
 
 
