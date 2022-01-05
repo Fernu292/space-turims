@@ -14,16 +14,21 @@ import Crew from '../Layout/Crew';
 import Tech from '../Layout/Tech';
 import Destiny from '../Layout/Destiny';
 
+//Context
+import NavBarContextProvider from '../context/NavBarContex';
+
 const App = () => {
     return (
-       <Router>
+      <NavBarContextProvider>
+        <Router>
            <Routes>
-               <Route index path = '/' element = {<Home />} />
+               <Route index path = '/' element = {<Destiny />} />
                <Route path = '/crew' element = {<Crew />} />
                <Route path = '/tech' element = {<Tech />} />
                <Route path = '/destination' element = {<Destiny />} />
            </Routes>
        </Router>
+      </NavBarContextProvider>
     );
 }
  

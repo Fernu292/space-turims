@@ -1,12 +1,13 @@
 @import '../vars';
 @import '../mixins';
 
-body{
+.home{
     background-image: url('../../assets/home/background-home-desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
     height: 100vh;
+    padding-top: 2rem;
 }
 
 .btn-home{
@@ -24,6 +25,13 @@ body{
     margin: 5rem auto;
     font-family: $hFont;
     font-size: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 4;
 }
 
 .btn-home-text{
@@ -32,6 +40,7 @@ body{
     cursor: pointer;
     text-transform: uppercase;
     padding: 7rem 3rem;
+    z-index: 3;
 }
 
 .efect-hover-btn{
@@ -51,7 +60,7 @@ body{
     right: 0;
     bottom: 0;
     margin: auto;
-    z-index: -1;
+    z-index: 0;
 }
 
 .efect-hover-btn-active{
@@ -61,7 +70,7 @@ body{
 }
 
 @include Mobile{
-    body{
+    .home{
         background-image: url('../../assets/home/background-home-mobile.jpg');
         background-size: cover;
         background-repeat: no-repeat;

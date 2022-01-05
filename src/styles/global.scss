@@ -3,13 +3,14 @@
 
 body{
     margin: 0;
-    padding: 2rem 0 0 0;
+    padding: 0;
     color: $white;
 
 }
 
 #root{
     margin-top: 0;
+    padding: 0;
 }
 
 h1,h2,h3, h4, h5{
@@ -20,6 +21,7 @@ h1,h2,h3, h4, h5{
 
 h1{
     font-size: 150px;
+    text-transform: uppercase;
 }
 
 h2{
@@ -47,6 +49,7 @@ h4{
 
 h5{
     color: $ligthPurlple;
+    letter-spacing: 4.75px;
 }
 
 .sub-h-2, .navigation{
@@ -78,4 +81,37 @@ ul{
     border-bottom: solid white 2px;
 }
 
+.content-section{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
+    div > p{
+        font-size: 26px;
+    }    
+
+    h5>span{
+        font-weight: bold;
+        color: lightgray;
+    }
+
+    @media (max-width: 480px){
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+
+        div > h1{
+            font-size: 4rem;
+        }
+
+        div > h5{
+            font-size: 1.2rem;
+        }
+
+        div > p{
+            font-size: 1.1rem;
+        }
+    }
+}

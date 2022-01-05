@@ -1,2 +1,10 @@
 @import '../vars';
 
+.destiny{
+    background-image: url('../../assets/destination/background-destination-desktop.jpg');
+    padding-top: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: $darkBlue;
+}
